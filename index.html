@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peyyala Karthik • VLSI Design & Embedded Systems</title>
+  <meta name="description" content="Portfolio of Peyyala Karthik, an Electronics & Communication Engineering student specializing in VLSI Design & Technology and Embedded Systems.">
+  <meta name="theme-color" content="#020617">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='50' fill='%23020617'/><circle cx='50' cy='50' r='22' fill='%2300f0ff'/></svg>">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- Full-screen Dynamic Cosmic Canvas -->
+  <canvas id="spaceCanvas"></canvas>
+  <div class="ambient-nebula-top"></div>
+  <div class="ambient-nebula-bottom"></div>
+
+  <!-- Page Loader -->
+  <div id="loader">
+    <div class="loader-orbit-ring"></div>
+    <div class="loader-logo">PEYYALA KARTHIK</div>
+    <div class="loader-line-container">
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <span class="brand-chip"></span>
+        KARTHIK
+      </a>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#activities" class="nav-link">Activities</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#methodology" class="nav-link">Methodology</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="/assets/Peyyala_Karthik_CV.pdf" target="_blank" rel="noopener noreferrer" class="nav-link" style="color: var(--accent-cyan); font-weight: 700;">CV (PDF) ↗</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="audio-toggle-btn" id="audioToggle" aria-label="Toggle Ambient Cosmic Audio">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="audioIcon"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+          <span id="audioStatusText">Cosmic SFX</span>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mobile-menu-link">Home</a>
+    <a href="#about" class="mobile-menu-link">About</a>
+    <a href="#skills" class="mobile-menu-link">Skills</a>
+    <a href="#projects" class="mobile-menu-link">Projects</a>
+    <a href="#certifications" class="mobile-menu-link">Certifications</a>
+    <a href="#activities" class="mobile-menu-link">Activities</a>
+    <a href="#education" class="mobile-menu-link">Education</a>
+    <a href="#methodology" class="mobile-menu-link">Methodology</a>
+    <a href="#contact" class="mobile-menu-link">Contact</a>
+    <a href="/assets/Peyyala_Karthik_CV.pdf" target="_blank" rel="noopener noreferrer" class="mobile-menu-link" style="color: var(--accent-cyan); font-weight: 700;">Access CV (PDF) ↗</a>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero section-container" id="home">
+      <div class="hero-grid">
+        
+        <!-- Left: Intro & Details -->
+        <div class="hero-content">
+          <div class="hero-greeting">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Hi, I'm Peyyala Karthik
+          </div>
+          
+          <h1 class="hero-title">
+            Electronics & Communication Engineer<br>
+            <span class="gradient-text">VLSI Design & Embedded Systems.</span>
+          </h1>
+
+          <div class="hero-badges">
+            <span class="badge-primary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="15" x2="23" y2="15"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="15" x2="4" y2="15"/></svg>
+              VLSI DESIGN & TECHNOLOGY
+            </span>
+            <span class="badge-secondary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+              EMBEDDED SYSTEMS & AUTOMATION
+            </span>
+          </div>
+
+          <p class="hero-subtitle">
+            Electronics & Communication Engineering student at Lovely Professional University specializing in VLSI Design and Technology, with an active focus on Embedded Systems, digital microcontrollers, PLC automation, and circuit simulation.
+          </p>
+
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            <span>Focus Area:</span>
+            <span class="status-text" id="statusText">VLSI & Digital Logic</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Cosmic Projects
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/assets/Peyyala_Karthik_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <span>Access CV (PDF) ↗</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </a>
+            <button class="btn btn-secondary" id="openResumeBtn" style="padding: 13px 18px;" title="Quick CV Preview Modal">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/karthik-peyyala-ba3b9837b" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/karthik3145" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="mailto:karthikpeyyala3145@gmail.com" class="social-icon-btn" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="tel:+916304811915" class="social-icon-btn" aria-label="Phone">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Circular Cosmic Holographic Photo Frame -->
+        <div class="hero-visual-wrapper">
+          <div class="cosmic-photo-card">
+            <div class="cosmic-orbit-ring"></div>
+            <div class="cosmic-orbit-ring-inner"></div>
+            
+            <div class="floating-orbit-badge top-left">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              VLSI & Embedded Systems
+            </div>
+
+            <div class="floating-orbit-badge bottom-right">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              B.Tech ECE • CGPA 7.10
+            </div>
+
+            <div class="photo-inner-container">
+              <img src="/assets/karthik-profile.png" alt="Peyyala Karthik" class="hero-profile-img" />
+              <div class="photo-cosmic-overlay"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-container" id="about">
+      <div class="section-header">
+        <div class="section-tag">01 • IDENTITY & TRAJECTORY</div>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Engineering student passionate about building digital hardware, microcontroller automation, and VLSI architectures.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-bio">
+          <p>
+            I am an Electronics & Communication Engineering student at <strong>Lovely Professional University</strong>, specializing in <strong>VLSI Design and Technology</strong>.
+          </p>
+          <p>
+            With a deep curiosity for both digital electronics and embedded engineering, I have actively worked on hands-on hardware implementations ranging from <strong>2D Memory Controllers</strong> simulated in Proteus to <strong>sensor-interfaced Arduino systems</strong>, <strong>PLC automated gates</strong>, and <strong>autonomous obstacle-avoiding vehicles</strong>.
+          </p>
+          <p>
+            My goal is to apply solid engineering fundamentals to design reliable hardware systems and solve real-world problems through continuous technical innovation.
+          </p>
+
+          <div class="info-cards-grid">
+            <div class="info-card">
+              <div class="info-card-label">DEGREE</div>
+              <div class="info-card-value">B.Tech – ECE</div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-label">SPECIALIZATION</div>
+              <div class="info-card-value">VLSI Design & Tech</div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-label">INTERMEDIATE</div>
+              <div class="info-card-value accent-text">94.40%</div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-label">ACADEMIC CGPA</div>
+              <div class="info-card-value accent-text">7.10</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Journey Timeline -->
+        <div class="journey-container glass-card">
+          <h3 style="font-size: 1.3rem; margin-bottom: 24px; color: var(--text-primary);">Engineering Timeline</h3>
+          
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-year">2025 – PRESENT</div>
+                <div class="timeline-title">B.Tech in ECE (VLSI Specialization)</div>
+                <div class="timeline-desc">Lovely Professional University (Punjab). Mastering digital system design, decoders, memory controllers, and embedded platforms.</div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-year">2023 – 2025</div>
+                <div class="timeline-title">Intermediate (MPC) – 94.40%</div>
+                <div class="timeline-desc">Tirumala Junior College, Rajahmundry. Strong foundation in Physics, Mathematics, and Analytical problem solving.</div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-year">2022 – 2023</div>
+                <div class="timeline-title">Matriculation (10th SSC) – 85%</div>
+                <div class="timeline-desc">Bhashyam English Medium High School, Rajahmundry.</div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-year">MISSION OBJECTIVE</div>
+                <div class="timeline-title">Embedded & VLSI Hardware Mastery</div>
+                <div class="timeline-desc">Developing deep expertise in chip design, sensor interfacing, PLC automation, and real-time computing systems.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-container" id="skills">
+      <div class="section-header">
+        <div class="section-tag">02 • TECHNICAL SKILLS</div>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Core competencies across hardware design, programming, embedded platforms, and simulation tools.</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Programming Languages -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div>
+              <div class="skill-cat-title">PROGRAMMING LANGUAGES</div>
+            </div>
+          </div>
+          <div class="skill-tags-wrapper">
+            <div class="skill-tag">C</div>
+            <div class="skill-tag">C++</div>
+            <div class="skill-tag">Python</div>
+          </div>
+        </div>
+
+        <!-- Embedded & Electronics -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <div>
+              <div class="skill-cat-title">EMBEDDED & ELECTRONICS</div>
+            </div>
+          </div>
+          <div class="skill-tags-wrapper">
+            <div class="skill-tag">Microcontrollers</div>
+            <div class="skill-tag">Arduino</div>
+            <div class="skill-tag">ESP32</div>
+            <div class="skill-tag">Sensors & Actuators</div>
+            <div class="skill-tag">Embedded Systems</div>
+            <div class="skill-tag">PCB Design</div>
+          </div>
+        </div>
+
+        <!-- Simulation & Design Tools -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="15" x2="23" y2="15"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="15" x2="4" y2="15"/></svg>
+            </div>
+            <div>
+              <div class="skill-cat-title">SIMULATION & DESIGN</div>
+            </div>
+          </div>
+          <div class="skill-tags-wrapper">
+            <div class="skill-tag">Proteus Circuit Design</div>
+            <div class="skill-tag">Tinkercad</div>
+            <div class="skill-tag">AutoCAD</div>
+            <div class="skill-tag">GitHub</div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <div class="skill-cat-title">SOFT SKILLS</div>
+            </div>
+          </div>
+          <div class="skill-tags-wrapper">
+            <div class="skill-tag">Problem-Solving Skills</div>
+            <div class="skill-tag">Teamwork & Collaboration</div>
+            <div class="skill-tag">Communication</div>
+            <div class="skill-tag">Adaptability</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section-container" id="projects">
+      <div class="section-header">
+        <div class="section-tag">03 • FEATURED PROJECTS</div>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-subtitle">Hands-on hardware systems, digital logic designs, and automation builds.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="vlsi">VLSI & Digital Logic</button>
+        <button class="filter-btn" data-filter="embedded">Embedded Systems</button>
+        <button class="filter-btn" data-filter="automation">PLC & Automation</button>
+        <button class="filter-btn" data-filter="software">Software & Logic</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project 01: 2D Memory Controller -->
+        <div class="glass-card project-card" data-category="vlsi" data-id="p4">
+          <div class="project-visual-box" id="p4-visual"></div>
+          <div class="project-num">PROJECT 01 • MAY 2026</div>
+          <h3 class="project-title">2D Memory Controller Using Decoder</h3>
+          <div class="project-badges">
+            <span class="tech-badge">Proteus</span>
+            <span class="tech-badge">74139 Decoder</span>
+            <span class="tech-badge">D Flip-Flops</span>
+            <span class="tech-badge">7447 Decoder</span>
+            <span class="tech-badge">7-Segment Display</span>
+          </div>
+          <p class="project-desc">
+            Digital memory-controller circuit utilizing decoder-based address selection, D flip-flop storage arrays, Write Enable gating, and 7-segment output visualization simulated in Proteus.
+          </p>
+          <button class="project-btn open-modal-btn" data-project="p4">
+            <span>View Full Details</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Project 02: Water Level Indicator -->
+        <div class="glass-card project-card" data-category="embedded" data-id="p2">
+          <div class="project-visual-box" id="p2-visual"></div>
+          <div class="project-num">PROJECT 02 • APR 2026</div>
+          <h3 class="project-title">Water Level Indicator & Automatic Pump Control</h3>
+          <div class="project-badges">
+            <span class="tech-badge">Arduino</span>
+            <span class="tech-badge">Ultrasonic Sensor</span>
+            <span class="tech-badge">Relay Module</span>
+            <span class="tech-badge">LCD 16x2</span>
+          </div>
+          <p class="project-desc">
+            Automated water tank level management using ultrasonic distance measurement, continuous real-time LCD readout, and automated motor-pump control via relay switching.
+          </p>
+          <button class="project-btn open-modal-btn" data-project="p2">
+            <span>View Full Details</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Project 03: Obstacle Avoiding Car -->
+        <div class="glass-card project-card" data-category="embedded" data-id="p3">
+          <div class="project-visual-box" id="p3-visual"></div>
+          <div class="project-num">PROJECT 03 • JUN 2025</div>
+          <h3 class="project-title">Obstacle Avoiding Car</h3>
+          <div class="project-badges">
+            <span class="tech-badge">Arduino</span>
+            <span class="tech-badge">Ultrasonic Sensor</span>
+            <span class="tech-badge">L293D Motor Driver</span>
+            <span class="tech-badge">Robotics</span>
+          </div>
+          <p class="project-desc">
+            Autonomous mobile robotics platform featuring real-time ultrasonic proximity detection and automated directional course correction using dual DC motors.
+          </p>
+          <button class="project-btn open-modal-btn" data-project="p3">
+            <span>View Full Details</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Project 04: Automatic Garage Gate Control System -->
+        <div class="glass-card project-card" data-category="automation" data-id="p5">
+          <div class="project-visual-box" id="p5-visual"></div>
+          <div class="project-num">PROJECT 04 • DEC 2025</div>
+          <h3 class="project-title">Automatic Garage Gate Control System</h3>
+          <div class="project-badges">
+            <span class="tech-badge">PLC Logic</span>
+            <span class="tech-badge">Optical Sensors</span>
+            <span class="tech-badge">Timed Automation</span>
+          </div>
+          <p class="project-desc">
+            Industrial automation model utilizing optical vehicle detection sensors coupled with PLC ladder logic for automated gate opening and timed auto-closing sequences.
+          </p>
+          <button class="project-btn open-modal-btn" data-project="p5">
+            <span>View Full Details</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Project 05: Word Scramble Puzzle Game -->
+        <div class="glass-card project-card" data-category="software" data-id="p1">
+          <div class="project-visual-box" id="p1-visual"></div>
+          <div class="project-num">PROJECT 05 • MAY 2025</div>
+          <h3 class="project-title">Word Scramble Puzzle Game</h3>
+          <div class="project-badges">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Interactive Logic</span>
+            <span class="tech-badge">Game Loop</span>
+          </div>
+          <p class="project-desc">
+            Interactive word-scramble game built with Python designed to assist beginners in practicing programming syntax, algorithmic problem solving, and string manipulations.
+          </p>
+          <button class="project-btn open-modal-btn" data-project="p1">
+            <span>View Full Details</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section-container" id="certifications">
+      <div class="section-header">
+        <div class="section-tag">04 • VERIFIED CREDENTIALS</div>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Accredited professional certifications in cyber-physical automation and electrical engineering safety.</p>
+      </div>
+
+      <div class="cert-grid">
+        
+        <!-- Certificate 01: Cyber-Physical Systems -->
+        <div class="glass-card cert-card">
+          <div>
+            <div class="cert-header">
+              <div class="cert-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="cert-badge-verified">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                VERIFIED CREDENTIAL
+              </span>
+            </div>
+
+            <div class="cert-issuer">CENTRE FOR PROFESSIONAL ENHANCEMENT • LPU</div>
+            <h3 class="cert-title">Cyber-Physical Systems: Sensors and PLC Interfacing</h3>
+            <p class="cert-desc">
+              Comprehensive certification in sensor integration, programmable logic controllers (PLC), industrial signal conditioning, and cyber-physical automation systems.
+            </p>
+          </div>
+
+          <div>
+            <div class="mono" style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 14px;">Issued: November 2025</div>
+            <div class="cert-actions">
+              <a href="https://drive.google.com/file/d/1frDdyupf7-C_O3j0xhTbddH1h4gwnVuB/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link-btn cert-link-primary">
+                <span>Open in Google Drive</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <button class="cert-link-btn btn-secondary preview-cert-btn" data-title="Cyber-Physical Systems: Sensors and PLC Interfacing" data-link="https://drive.google.com/file/d/1frDdyupf7-C_O3j0xhTbddH1h4gwnVuB/preview">
+                <span>Preview</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 02: Basics of Electrical Safety -->
+        <div class="glass-card cert-card">
+          <div>
+            <div class="cert-header">
+              <div class="cert-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <span class="cert-badge-verified">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                VERIFIED CREDENTIAL
+              </span>
+            </div>
+
+            <div class="cert-issuer">UNIATHENA & CAMBRIDGE INTERNATIONAL QUALIFICATIONS (CIQ), UK</div>
+            <h3 class="cert-title">Basics of Electrical Safety</h3>
+            <p class="cert-desc">
+              Accredited safety engineering certification addressing high-voltage compliance, industrial grounding, shock mitigation, and circuit hazard management.
+            </p>
+          </div>
+
+          <div>
+            <div class="mono" style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 14px;">Issued: December 2025</div>
+            <div class="cert-actions">
+              <a href="https://drive.google.com/file/d/1u2mBrOC81snkzpiFIPVRuOxwFXyYC9yM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link-btn cert-link-primary">
+                <span>Open in Google Drive</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <button class="cert-link-btn btn-secondary preview-cert-btn" data-title="Basics of Electrical Safety" data-link="https://drive.google.com/file/d/1u2mBrOC81snkzpiFIPVRuOxwFXyYC9yM/preview">
+                <span>Preview</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Activities & Participations -->
+    <section class="section-container" id="activities">
+      <div class="section-header">
+        <div class="section-tag">05 • ENGAGEMENT & LEADERSHIP</div>
+        <h2 class="section-title">Activities & Hackathons</h2>
+        <p class="section-subtitle">Active involvement in engineering hackathons and community social initiatives.</p>
+      </div>
+
+      <div class="activities-grid">
+        
+        <div class="glass-card activity-card">
+          <div class="mono" style="color: var(--accent-cyan); font-size: 0.8rem; margin-bottom: 8px;">24-HOUR HACKATHON • NOV 2025</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Aethera-X Hackathon</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65;">
+            Participated in an intensive 24-hour national hackathon during the 2nd semester, engaging in rapid hardware/software prototyping, agile team collaboration, and technical brainstorming.
+          </p>
+        </div>
+
+        <div class="glass-card activity-card">
+          <div class="mono" style="color: var(--accent-cyan); font-size: 0.8rem; margin-bottom: 8px;">COMMUNITY INITIATIVE • JUL 2026</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 10px">Community Development Project (CDP)</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65;">
+            Partnered with <strong>Swarnandhra Seva Samstha</strong> in Rajahmundry, contributing toward grassroots community enhancement, educational outreach, and social welfare programs.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section-container" id="education">
+      <div class="section-header">
+        <div class="section-tag">06 • ACADEMIC BACKGROUND</div>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic milestones and specialized electronics engineering education.</p>
+      </div>
+
+      <div class="edu-timeline">
+        
+        <div class="glass-card edu-card">
+          <div class="edu-year">2025 – PRESENT</div>
+          <div>
+            <div class="edu-school">Lovely Professional University</div>
+            <div class="edu-degree">Bachelor of Technology – Electronics and Communication Engineering</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">
+              Specialization: <strong>VLSI Design and Technology</strong> • Punjab, India
+            </div>
+            <div class="edu-gpa">CGPA: 7.10</div>
+          </div>
+        </div>
+
+        <div class="glass-card edu-card">
+          <div class="edu-year">2023 – 2025</div>
+          <div>
+            <div class="edu-school">Tirumala Junior College</div>
+            <div class="edu-degree">Intermediate (MPC - Mathematics, Physics, Chemistry)</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">
+              Rajahmundry, Andhra Pradesh
+            </div>
+            <div class="edu-gpa">Percentage: 94.40%</div>
+          </div>
+        </div>
+
+        <div class="glass-card edu-card">
+          <div class="edu-year">2022 – 2023</div>
+          <div>
+            <div class="edu-school">Bhashyam English Medium High School</div>
+            <div class="edu-degree">Matriculation (10th Standard SSC)</div>
+            <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">
+              Rajahmundry, Andhra Pradesh
+            </div>
+            <div class="edu-gpa">Percentage: 85.00%</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Growth Methodology Section (Replacing Section 7) -->
+    <section class="section-container" id="methodology">
+      <div class="section-header">
+        <div class="section-tag">07 • GROWTH METHODOLOGY</div>
+        <h2 class="section-title">How I Learn</h2>
+        <p class="section-subtitle">An iterative 5-stage engineering loop designed to turn curiosity into functional, reliable hardware and software systems.</p>
+      </div>
+
+      <div class="methodology-loop-container">
+        
+        <div class="methodology-grid">
+          
+          <!-- Stage 01: LEARN -->
+          <div class="stage-card">
+            <div class="stage-num-pill">01 • STAGE</div>
+            <div class="stage-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3 class="stage-title">LEARN</h3>
+            <p class="stage-desc">Grasp core digital concepts, study schematics, and examine datasheets thoroughly.</p>
+          </div>
+
+          <!-- Stage 02: EXPERIMENT -->
+          <div class="stage-card">
+            <div class="stage-num-pill">02 • STAGE</div>
+            <div class="stage-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31L4.62 17.7A2 2 0 0 0 6.32 21h11.36a2 2 0 0 0 1.7-3.3L14 9.31V2"/><line x1="8.5" y1="2" x2="15.5" y2="2"/><line x1="14" y1="9" x2="10" y2="9"/></svg>
+            </div>
+            <h3 class="stage-title">EXPERIMENT</h3>
+            <p class="stage-desc">Run circuit simulations in Proteus and test breadboard wiring to validate theories.</p>
+          </div>
+
+          <!-- Stage 03: BUILD -->
+          <div class="stage-card">
+            <div class="stage-num-pill">03 • STAGE</div>
+            <div class="stage-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="15" x2="23" y2="15"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="15" x2="4" y2="15"/></svg>
+            </div>
+            <h3 class="stage-title">BUILD</h3>
+            <p class="stage-desc">Assemble real hardware, wire sensors, program microcontrollers, and connect logic.</p>
+          </div>
+
+          <!-- Stage 04: DEBUG -->
+          <div class="stage-card">
+            <div class="stage-num-pill">04 • STAGE</div>
+            <div class="stage-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3 class="stage-title">DEBUG</h3>
+            <p class="stage-desc">Understand what went wrong, probe signal pulses, test the system, and iterate.</p>
+          </div>
+
+          <!-- Stage 05: IMPROVE -->
+          <div class="stage-card">
+            <div class="stage-num-pill">05 • STAGE</div>
+            <div class="stage-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="stage-title">IMPROVE</h3>
+            <p class="stage-desc">Refine timing, optimize code efficiency, and document lessons learned for the next build.</p>
+          </div>
+
+        </div>
+
+        <div class="loop-footer-bar">
+          <svg class="loop-pulse-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          <span>CONTINUOUS RECURSIVE HARDWARE & SOFTWARE EVOLUTION LOOP ⟲</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-container" id="contact">
+      <div class="section-header">
+        <div class="section-tag">08 • CONNECT & TRANSMISSION</div>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Interested in VLSI design, embedded systems, collaborating on hardware projects, or career opportunities? Send a message.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 16px;">Direct Communication</h3>
+          
+          <div class="contact-info-list">
+            
+            <!-- Curriculum Vitae (CV) Download Card -->
+            <a href="/assets/Peyyala_Karthik_CV.pdf" target="_blank" rel="noopener noreferrer" class="contact-item" style="border-color: rgba(0, 240, 255, 0.45); background: linear-gradient(135deg, rgba(0, 240, 255, 0.12) 0%, rgba(37, 99, 235, 0.2) 100%);">
+              <div class="contact-icon" style="background: var(--accent-cyan); color: #020617; box-shadow: 0 0 15px rgba(0, 240, 255, 0.6);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+              </div>
+              <div>
+                <div class="mono" style="font-size: 0.74rem; color: var(--accent-cyan); font-weight: 700;">CURRICULUM VITAE (CV) • PDF</div>
+                <div style="font-weight: 700; color: #ffffff;">Access & Download Full CV ↗</div>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/karthik-peyyala-ba3b9837b" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <div class="mono" style="font-size: 0.74rem; color: var(--text-muted);">LINKEDIN (CLICK TO OPEN)</div>
+                <div style="font-weight: 600;">linkedin.com/in/karthik-peyyala-ba3b9837b</div>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/karthik3145" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div>
+                <div class="mono" style="font-size: 0.74rem; color: var(--text-muted);">GITHUB (CLICK TO OPEN)</div>
+                <div style="font-weight: 600;">github.com/karthik3145</div>
+              </div>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:karthikpeyyala3145@gmail.com" class="contact-item" id="copyEmail">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="mono" style="font-size: 0.74rem; color: var(--text-muted);">EMAIL (CLICK TO COPY)</div>
+                <div style="font-weight: 600;">karthikpeyyala3145@gmail.com</div>
+              </div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+916304811915" class="contact-item" id="copyPhone">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="mono" style="font-size: 0.74rem; color: var(--text-muted);">PHONE (CLICK TO CALL)</div>
+                <div style="font-weight: 600;">+91 6304811915</div>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="mono" style="font-size: 0.74rem; color: var(--text-muted);">LOCATION</div>
+                <div style="font-weight: 600;">Rajahmundry, Andhra Pradesh, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="glass-card contact-form" id="contactForm">
+          <div class="form-group">
+            <label class="form-label" for="contactName">Your Name</label>
+            <input type="text" id="contactName" class="form-input" placeholder="e.g. Alex Hunter" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactEmail">Your Email</label>
+            <input type="email" id="contactEmail" class="form-input" placeholder="name@domain.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactMessage">Message</label>
+            <textarea id="contactMessage" class="form-textarea" placeholder="Hello Karthik, I would like to connect with you regarding..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <span>Transmit Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-container" style="padding: 20px 24px;">
+      <div class="footer-brand">PEYYALA KARTHIK</div>
+      <p style="margin-bottom: 6px; color: var(--text-secondary);">Electronics & Communication Engineering • Lovely Professional University</p>
+      <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.82rem; margin-bottom: 16px;">
+        VLSI Design & Technology • Embedded Systems • Hardware Innovation
+      </p>
+      <p style="font-size: 0.8rem; color: var(--text-muted);">
+        © 2026 Peyyala Karthik. Crafted with Cosmic Space Blue Theme.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-container">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="mono" id="modalProjectNum" style="color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 6px;">PROJECT 01 • MAY 2026</div>
+      <h2 class="modal-title" id="modalProjectTitle">Project Title</h2>
+      <div class="project-badges" id="modalProjectBadges" style="margin-bottom: 24px;"></div>
+
+      <div class="modal-section">
+        <div class="modal-section-title">SYSTEM OVERVIEW</div>
+        <div class="modal-section-body" id="modalOverview"></div>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-section-title">ROLE PLAYED</div>
+        <div class="modal-section-body" id="modalRole"></div>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-section-title">TECHNICAL RESPONSIBILITIES</div>
+        <div class="modal-section-body" id="modalResponsibilities"></div>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-section-title">CHALLENGES FACED</div>
+        <div class="modal-section-body" id="modalChallenges"></div>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-section-title">LEARNING OUTCOMES</div>
+        <div class="modal-section-body" id="modalOutcomes"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificate Preview Modal -->
+  <div class="modal-backdrop" id="certModal">
+    <div class="modal-container" style="max-width: 800px;">
+      <button class="modal-close" id="certModalCloseBtn" aria-label="Close certificate preview">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2 class="modal-title" id="certModalTitle" style="margin-bottom: 16px;">Certificate Preview</h2>
+      <div style="width: 100%; height: 480px; background: rgba(0,0,0,0.5); border-radius: var(--radius-md); overflow: hidden; margin-bottom: 20px;">
+        <iframe id="certIframe" src="" style="width: 100%; height: 100%; border: none;" allow="autoplay"></iframe>
+      </div>
+      <div style="display: flex; justify-content: flex-end; gap: 12px;">
+        <a id="certDriveBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <span>Open Full in Google Drive</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Preview Modal -->
+  <div class="modal-backdrop" id="resumeModal">
+    <div class="modal-container" style="max-width: 850px;">
+      <button class="modal-close" id="resumeModalCloseBtn" aria-label="Close resume modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="mono" style="color: var(--accent-cyan); font-size: 0.8rem; margin-bottom: 4px;">OFFICIAL CURRICULUM VITAE</div>
+      <h2 class="modal-title" style="margin-bottom: 8px;">Peyyala Karthik — Engineering CV</h2>
+      <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 16px;">
+        B.Tech in Electronics & Communication Engineering (Specialization: VLSI Design & Technology)
+      </p>
+      
+      <div style="width: 100%; height: 500px; background: rgba(2, 6, 23, 0.8); border: 1px solid var(--border-cosmic); border-radius: var(--radius-md); overflow: hidden; margin-bottom: 20px;">
+        <iframe src="/assets/Peyyala_Karthik_CV.pdf" style="width: 100%; height: 100%; border: none;"></iframe>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <a href="/assets/Peyyala_Karthik_CV.pdf" download="Peyyala_Karthik_CV.pdf" class="btn btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download CV PDF</span>
+        </a>
+        <div style="display: flex; gap: 12px;">
+          <a href="/assets/Peyyala_Karthik_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Open in New Tab ↗</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastMsg">Notification</span>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/space-engine.js"></script>
+  <script type="module" src="/src/project-diagrams.js"></script>
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
