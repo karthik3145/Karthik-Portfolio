@@ -38,26 +38,6 @@ const PROJECTS_DATA = {
     challenges: "Coordinating obstacle detection with motor control so that the car could respond automatically to real-time obstacles.",
     outcomes: "Learned the basics of ultrasonic sensing, motor-driver interfacing, autonomous vehicle control, and real-time response."
   },
-  p5: {
-    number: "PROJECT 04 • DEC 2025",
-    title: "Automatic Garage Gate Control System",
-    technologies: ["PLC Logic", "Optical Sensors", "Timed Automation"],
-    overview: "Industrial automation model utilizing optical vehicle detection sensors coupled with PLC ladder logic for automated gate opening and timed auto-closing sequences.",
-    role: "Contributed to the sensor-based automatic entry and exit gate-control system.",
-    responsibilities: "Used sensors to detect vehicle entry and exit and send signals to the PLC. Implemented automatic gate opening and timed closing after the vehicle entered or exited.",
-    challenges: "Coordinating sensor signals with PLC control and ensuring that the gates opened and closed after the required time interval.",
-    outcomes: "Learned the basics of PLC-based automation, sensor-to-PLC signalling, timed control, and automated gate operation."
-  },
-  p1: {
-    number: "PROJECT 05 • MAY 2025",
-    title: "Word Scramble Puzzle Game",
-    technologies: ["Python", "Game Logic", "Problem Solving"],
-    overview: "Interactive word-scramble game built with Python designed to assist beginners in practicing programming syntax, algorithmic problem solving, and string manipulations.",
-    role: "Team member.",
-    responsibilities: "Participated in developing and presenting an interactive word-scramble puzzle game designed to help beginners practice Python through gameplay.",
-    challenges: "Understanding and implementing the logic required for an interactive word-based game.",
-    outcomes: "Gained practical exposure to Python programming and learned how programming concepts can be applied to a simple interactive application."
-  }
 };
 
 // Web Audio API Cosmic Sound Synthesizer
